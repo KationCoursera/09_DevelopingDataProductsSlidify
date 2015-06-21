@@ -57,6 +57,7 @@
 <li>This dataset has weight measurements of different chicks (50) which were on four different diets</li>
 <li>In order to determine which of the diets cause the most weight gained, we need to find the fattest chick!</li>
 </ul></li>
+<li>Link to the app: <a href="https://jurebordon.shinyapps.io/09_DevelopingDataProducts">https://jurebordon.shinyapps.io/09_DevelopingDataProducts</a></li>
 </ol>
 
   </article>
@@ -103,7 +104,7 @@ class(ChickWeight$Chick)
 
 <slide class="class" id="id" style="background:;">
   <hgroup>
-    <h1>Server component</h1>
+    <h2>Server component</h2>
   </hgroup>
   <article data-timings="">
     <p>Once we have it as numeric, we can now subset the data which is to be plotted. We do this with a reactive function:</p>
@@ -118,6 +119,19 @@ class(ChickWeight$Chick)
 </code></pre>
 
 <p>Notice how we obtain values from both edges of the slider (<code>input$chick[1]</code> for lower edge and <code>input$chick[2]</code> for higher edge).</p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  <hgroup>
+    <h2>Fattest chick around</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>Thank you for trying out my simple shinyapp which serves as a proof of concept that somethings are easy to learn but difficult to master! Hopefully we can use what we learned here in our future work and especially in the Capstone project!</p>
+
+<p>Btw, did you actually find the fattest chick? <strong>hint: it was the chick #35</strong></p>
 
   </article>
   <!-- Presenter Notes -->
@@ -149,6 +163,12 @@ class(ChickWeight$Chick)
       <a href="#" target="_self" rel='tooltip' 
         data-slide=4 title='Server component'>
          4
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=5 title='Fattest chick around'>
+         5
       </a>
     </li>
   </ul>

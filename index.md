@@ -20,8 +20,9 @@ knit        : slidify::knit2slides
     - We used a the ChickWeight dataset to build this app
     - This dataset has weight measurements of different chicks (50) which were on four different diets
     - In order to determine which of the diets cause the most weight gained, we need to find the fattest chick!
+5. Link to the app: https://jurebordon.shinyapps.io/09_DevelopingDataProducts
 
---- .class #id
+--- .class #id 
 
 ## UI component
 
@@ -55,7 +56,7 @@ class(ChickWeight$Chick)
 
 --- .class #id 
 
-# Server component
+## Server component
 
 Once we have it as numeric, we can now subset the data which is to be plotted. We do this with a reactive function:
 
@@ -70,3 +71,11 @@ chick_data <- reactive({
 ```
 
 Notice how we obtain values from both edges of the slider (`input$chick[1]` for lower edge and `input$chick[2]` for higher edge).
+
+--- .class #id 
+
+## Fattest chick around
+
+Thank you for trying out my simple shinyapp which serves as a proof of concept that somethings are easy to learn but difficult to master! Hopefully we can use what we learned here in our future work and especially in the Capstone project!
+
+Btw, did you actually find the fattest chick? **hint: it was the chick #35**
